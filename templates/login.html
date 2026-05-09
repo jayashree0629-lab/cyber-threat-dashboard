@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Cyber Threat Dashboard</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-dark text-light">
+
+<div class="container mt-5">
+
+    <div class="card p-4 shadow-lg">
+
+        <h1 class="text-center mb-4 text-dark">
+            Cyber Threat Dashboard
+        </h1>
+
+        <form method="POST">
+
+            <input type="text"
+                   name="username"
+                   class="form-control mb-3"
+                   placeholder="Username"
+                   required>
+
+            <input type="password"
+                   name="password"
+                   class="form-control mb-3"
+                   placeholder="Password"
+                   required>
+
+            <button type="submit"
+                    class="btn btn-danger w-100">
+                Login
+            </button>
+
+        </form>
+
+        <h4 class="text-center mt-3 text-danger">
+            {{ message }}
+        </h4>
+
+    </div>
+
+</div>
+
+</body>
+</html>
